@@ -37,13 +37,13 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 }</style>
 <style id="wp-block-post-content-inline-css">.wp-block-post-content{display:flow-root}</style>
 <link rel="stylesheet" id="visual-portfolio-css" href="/wp-content/plugins/visual-portfolio/build/assets/css/main.css?ver=1751675712" media="all">
-<link rel="stylesheet" id="fancybox-css" href="/wp-content/plugins/visual-portfolio/assets/vendor/fancybox/dist/jquery.fancybox.min.css?ver=3.5.7" media="all">
-<link rel="stylesheet" id="visual-portfolio-popup-fancybox-css" href="/wp-content/plugins/visual-portfolio/build/assets/css/popup-fancybox.css?ver=1751675712" media="all">
-<style id="visual-portfolio-popup-fancybox-inline-css">.vp-fancybox .fancybox-bg { background-color: #1e1e1e; }</style>
+<link rel="stylesheet" id="photoswipe-css" href="/wp-content/plugins/visual-portfolio/assets/vendor/photoswipe/dist/photoswipe.css?ver=4.1.3" media="all">
+<link rel="stylesheet" id="photoswipe-default-skin-css" href="/wp-content/plugins/visual-portfolio/assets/vendor/photoswipe/dist/default-skin/default-skin.css?ver=4.1.3" media="all">
+<link rel="stylesheet" id="visual-portfolio-popup-photoswipe-css" href="/wp-content/plugins/visual-portfolio/build/assets/css/popup-photoswipe.css?ver=1751675712" media="all">
+<style id="visual-portfolio-popup-photoswipe-inline-css">.vp-pswp .pswp__bg { background-color: #1e1e1e; }</style>
 <link rel="stylesheet" id="visual-portfolio-layout-masonry-css" href="/wp-content/plugins/visual-portfolio/build/assets/css/layout-masonry.css?ver=1751675712" media="all">
 <link rel="stylesheet" id="simplebar-css" href="/wp-content/plugins/visual-portfolio/assets/vendor/simplebar/dist/simplebar.min.css?ver=5.3.0" media="all">
 <link rel="stylesheet" id="visual-portfolio-custom-scrollbar-css" href="/wp-content/plugins/visual-portfolio/build/assets/css/custom-scrollbar.css?ver=1751675712" media="all">
-<link rel="stylesheet" id="visual-portfolio-lazyload-css" href="/wp-content/plugins/visual-portfolio/build/assets/css/lazyload.css?ver=1751675712" media="all">
 <link rel="stylesheet" id="visual-portfolio-layout-tiles-css" href="/wp-content/plugins/visual-portfolio/build/assets/css/layout-tiles.css?ver=1751675712" media="all">
 <link rel="stylesheet" id="visual-portfolio-items-style-default-css" href="/wp-content/plugins/visual-portfolio/templates/items-list/items-style/style.css?ver=1751675713" media="all">
 <link rel="stylesheet" id="visual-portfolio-errors-default-css" href="/wp-content/plugins/visual-portfolio/templates/errors/style.css?ver=1751675713" media="all">
@@ -112,7 +112,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 <link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=http%3A%2F%2F%2Fcreatures%2F#038;format=xml">
 <script type="text/javascript">
 /* <![CDATA[ */
-var VPData = {"version":"3.3.16","pro":false,"__":{"couldnt_retrieve_vp":"Couldn't retrieve Visual Portfolio ID.","pswp_close":"Close (Esc)","pswp_share":"Share","pswp_fs":"Toggle fullscreen","pswp_zoom":"Zoom in\/out","pswp_prev":"Previous (arrow left)","pswp_next":"Next (arrow right)","pswp_share_fb":"Share on Facebook","pswp_share_tw":"Tweet","pswp_share_x":"X","pswp_share_pin":"Pin it","pswp_download":"Download","fancybox_close":"Close","fancybox_next":"Next","fancybox_prev":"Previous","fancybox_error":"The requested content cannot be loaded. <br \/> Please try again later.","fancybox_play_start":"Start slideshow","fancybox_play_stop":"Pause slideshow","fancybox_full_screen":"Full screen","fancybox_thumbs":"Thumbnails","fancybox_download":"Download","fancybox_share":"Share","fancybox_zoom":"Zoom"},"settingsPopupGallery":{"enable_on_wordpress_images":true,"vendor":"fancybox","deep_linking":false,"deep_linking_url_to_share_images":false,"show_arrows":true,"show_counter":true,"show_zoom_button":false,"show_fullscreen_button":true,"show_share_button":false,"show_close_button":true,"show_thumbs":false,"show_download_button":false,"show_slideshow":false,"click_to_zoom":true,"restore_focus":true},"screenSizes":[320,576,768,992,1200]};
+var VPData = {"version":"3.3.16","pro":false,"__":{"couldnt_retrieve_vp":"Couldn't retrieve Visual Portfolio ID.","pswp_close":"Close (Esc)","pswp_share":"Share","pswp_fs":"Toggle fullscreen","pswp_zoom":"Zoom in\/out","pswp_prev":"Previous (arrow left)","pswp_next":"Next (arrow right)","pswp_share_fb":"Share on Facebook","pswp_share_tw":"Tweet","pswp_share_x":"X","pswp_share_pin":"Pin it","pswp_download":"Download","fancybox_close":"Close","fancybox_next":"Next","fancybox_prev":"Previous","fancybox_error":"The requested content cannot be loaded. <br \/> Please try again later.","fancybox_play_start":"Start slideshow","fancybox_play_stop":"Pause slideshow","fancybox_full_screen":"Full screen","fancybox_thumbs":"Thumbnails","fancybox_download":"Download","fancybox_share":"Share","fancybox_zoom":"Zoom"},"settingsPopupGallery":{"enable_on_wordpress_images":true,"vendor":"photoswipe","deep_linking":false,"deep_linking_url_to_share_images":false,"show_arrows":true,"show_counter":true,"show_zoom_button":false,"show_fullscreen_button":true,"show_share_button":false,"show_close_button":true,"show_thumbs":false,"show_download_button":false,"show_slideshow":false,"click_to_zoom":true,"restore_focus":true},"screenSizes":[320,576,768,992,1200]};
 /* ]]> */
 </script>
 		<noscript>
@@ -120,29 +120,8 @@ var VPData = {"version":"3.3.16","pro":false,"__":{"couldnt_retrieve_vp":"Couldn
 		</noscript>
 		<script type="importmap" id="wp-importmap">{"imports":{"@wordpress\/interactivity":"\/wp-includes\/js\/dist\/script-modules\/interactivity\/index.min.js?ver=55aebb6e0a16726baffb"}}</script>
 <script type="module" src="/wp-includes/js/dist/script-modules/block-library/navigation/view.min.js?ver=61572d447d60c0aa5240" id="@wordpress/block-library/navigation/view-js-module"></script>
-<link rel="modulepreload" href="/wp-includes/js/dist/script-modules/interactivity/index.min.js?ver=55aebb6e0a16726baffb" id="@wordpress/interactivity-js-modulepreload">		<style type="text/css">/* If html does not have either class, do not show lazy loaded images. */
-			html:not(.vp-lazyload-enabled):not(.js) .vp-lazyload {
-				display: none;
-			}</style>
-		<script>document.documentElement.classList.add(
-				'vp-lazyload-enabled'
-			);</script>
-				<script>(function(){
-				// Check if fallback is not necessary.
-				if ( CSS.supports('selector(:has(div))') ) {
-					return;
-				}
-
-				var linkTag = document.createElement("link");
-				linkTag.setAttribute('rel', 'stylesheet');
-				linkTag.setAttribute('href', '/wp-content/plugins/visual-portfolio/build/assets/css/lazyload-fallback.css?ver=3.3.16');
-				document.head.appendChild(linkTag);
-
-				var scriptTag = document.createElement("script");
-				scriptTag.setAttribute('src', '/wp-content/plugins/visual-portfolio/build/assets/js/lazyload-fallback.js?ver=3.3.16');
-				document.head.appendChild(scriptTag);
-			}());</script>
-		<style class="wp-fonts-local">@font-face{font-family:"Source Sans Pro";font-style:normal;font-weight:400;font-display:fallback;src:url('/wp-content/themes/the-minimal-blogger/assets/fonts/source_sans_pro/SourceSansPro-Regular.ttf') format('truetype');font-stretch:normal;}
+<link rel="modulepreload" href="/wp-includes/js/dist/script-modules/interactivity/index.min.js?ver=55aebb6e0a16726baffb" id="@wordpress/interactivity-js-modulepreload">
+<style class="wp-fonts-local">@font-face{font-family:"Source Sans Pro";font-style:normal;font-weight:400;font-display:fallback;src:url('/wp-content/themes/the-minimal-blogger/assets/fonts/source_sans_pro/SourceSansPro-Regular.ttf') format('truetype');font-stretch:normal;}
 @font-face{font-family:"Source Sans Pro";font-style:normal;font-weight:600;font-display:fallback;src:url('/wp-content/themes/the-minimal-blogger/assets/fonts/source_sans_pro/SourceSansPro-SemiBold.ttf') format('truetype');font-stretch:normal;}
 @font-face{font-family:"Source Sans Pro";font-style:normal;font-weight:700;font-display:fallback;src:url('/wp-content/themes/the-minimal-blogger/assets/fonts/source_sans_pro/SourceSansPro-Bold.ttf') format('truetype');font-stretch:normal;}
 @font-face{font-family:"Source Sans Pro";font-style:italic;font-weight:400;font-display:fallback;src:url('/wp-content/themes/the-minimal-blogger/assets/fonts/source_sans_pro/SourceSansPro-Italic.ttf') format('truetype');font-stretch:normal;}
@@ -167,11 +146,11 @@ var VPData = {"version":"3.3.16","pro":false,"__":{"couldnt_retrieve_vp":"Couldn
 							<button aria-label="Close menu" class="wp-block-navigation__responsive-container-close" data-wp-on-async--click="actions.closeMenuOnClick"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="m13.06 12 6.47-6.47-1.06-1.06L12 10.94 5.53 4.47 4.47 5.53 10.94 12l-6.47 6.47 1.06 1.06L12 13.06l6.47 6.47 1.06-1.06L13.06 12Z"></path></svg></button>
 							<div class="wp-block-navigation__responsive-container-content" data-wp-watch="callbacks.focusFirstElement" id="modal-1-content">
 								<ul class="wp-block-navigation__container is-responsive items-justified-center wp-block-navigation">
-<li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="/"><span class="wp-block-navigation-item__label">Home</span></a></li>
-<li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="/characters/"><span class="wp-block-navigation-item__label">Characters</span></a></li>
-<li class=" wp-block-navigation-item current-menu-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="/creatures/" aria-current="page"><span class="wp-block-navigation-item__label">Creatures</span></a></li>
-<li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="/environments/"><span class="wp-block-navigation-item__label">Environments</span></a></li>
-<li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="/contact/"><span class="wp-block-navigation-item__label">Contact</span></a></li>
+<li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://www.sofievandenbroek.com/"><span class="wp-block-navigation-item__label">Home</span></a></li>
+<li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://www.sofievandenbroek.com/characters/"><span class="wp-block-navigation-item__label">Characters</span></a></li>
+<li class=" wp-block-navigation-item current-menu-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://www.sofievandenbroek.com/creatures/" aria-current="page"><span class="wp-block-navigation-item__label">Creatures</span></a></li>
+<li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://www.sofievandenbroek.com/environments/"><span class="wp-block-navigation-item__label">Environments</span></a></li>
+<li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://www.sofievandenbroek.com/contact/"><span class="wp-block-navigation-item__label">Contact</span></a></li>
 </ul>
 							</div>
 						</div>
@@ -210,8 +189,7 @@ var VPData = {"version":"3.3.16","pro":false,"__":{"couldnt_retrieve_vp":"Couldn
 	<div class="vp-portfolio__item-img">
 			<a href="/wp-content/uploads/2025/07/iwp-concept-art-cats.png">
 	
-		<noscript><img fetchpriority="high" decoding="async" width="1007" height="480" data-skip-lazy src="/wp-content/uploads/2025/07/iwp-concept-art-cats.png" class="wp-image-291" alt="" srcset="/wp-content/uploads/2025/07/iwp-concept-art-cats.png 1007w, /wp-content/uploads/2025/07/iwp-concept-art-cats-300x143.png 300w, /wp-content/uploads/2025/07/iwp-concept-art-cats-768x366.png 768w, /wp-content/uploads/2025/07/iwp-concept-art-cats-500x238.png 500w, /wp-content/uploads/2025/07/iwp-concept-art-cats-800x381.png 800w" sizes="(max-width: 1007px) 100vw, 1007px"></noscript>
-<img decoding="async" width="1007" height="480" src="/wp-content/uploads/2025/07/iwp-concept-art-cats.png" class="wp-image-291 vp-lazyload" alt srcset="data:image/svg+xml;base64,/creatures/PHN2ZyB3aWR0aD0iMTAwNyIgaGVpZ2h0PSI0ODAiIHZpZXdCb3g9IjAgMCAxMDA3IDQ4MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48L3N2Zz4" data-src="/wp-content/uploads/2025/07/iwp-concept-art-cats.png" data-srcset="/wp-content/uploads/2025/07/iwp-concept-art-cats.png 1007w, /wp-content/uploads/2025/07/iwp-concept-art-cats-300x143.png 300w, /wp-content/uploads/2025/07/iwp-concept-art-cats-768x366.png 768w, /wp-content/uploads/2025/07/iwp-concept-art-cats-500x238.png 500w, /wp-content/uploads/2025/07/iwp-concept-art-cats-800x381.png 800w" data-sizes="auto" loading="eager">
+		<img fetchpriority="high" decoding="async" width="1007" height="480" src="/wp-content/uploads/2025/07/iwp-concept-art-cats.png" class="wp-image-291" alt="" srcset="/wp-content/uploads/2025/07/iwp-concept-art-cats.png 1007w, /wp-content/uploads/2025/07/iwp-concept-art-cats-300x143.png 300w, /wp-content/uploads/2025/07/iwp-concept-art-cats-768x366.png 768w, /wp-content/uploads/2025/07/iwp-concept-art-cats-500x238.png 500w, /wp-content/uploads/2025/07/iwp-concept-art-cats-800x381.png 800w" sizes="(max-width: 1007px) 100vw, 1007px">
 		<div class="vp-portfolio__item-overlay"></div>
 
 		</a>	</div>
@@ -241,8 +219,7 @@ var VPData = {"version":"3.3.16","pro":false,"__":{"couldnt_retrieve_vp":"Couldn
 	<div class="vp-portfolio__item-img">
 			<a href="/wp-content/uploads/2025/07/Concept-art-cat-color-choice.png">
 	
-		<noscript><img decoding="async" width="1432" height="620" data-skip-lazy src="/wp-content/uploads/2025/07/Concept-art-cat-color-choice.png" class="wp-image-288" alt="" srcset="/wp-content/uploads/2025/07/Concept-art-cat-color-choice.png 1432w, /wp-content/uploads/2025/07/Concept-art-cat-color-choice-300x130.png 300w, /wp-content/uploads/2025/07/Concept-art-cat-color-choice-1024x443.png 1024w, /wp-content/uploads/2025/07/Concept-art-cat-color-choice-768x333.png 768w, /wp-content/uploads/2025/07/Concept-art-cat-color-choice-500x216.png 500w, /wp-content/uploads/2025/07/Concept-art-cat-color-choice-800x346.png 800w, /wp-content/uploads/2025/07/Concept-art-cat-color-choice-1280x554.png 1280w" sizes="(max-width: 1432px) 100vw, 1432px"></noscript>
-<img decoding="async" width="1432" height="620" src="/wp-content/uploads/2025/07/Concept-art-cat-color-choice.png" class="wp-image-288 vp-lazyload" alt srcset="data:image/svg+xml;base64,/creatures/PHN2ZyB3aWR0aD0iMTQzMiIgaGVpZ2h0PSI2MjAiIHZpZXdCb3g9IjAgMCAxNDMyIDYyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48L3N2Zz4" data-src="/wp-content/uploads/2025/07/Concept-art-cat-color-choice.png" data-srcset="/wp-content/uploads/2025/07/Concept-art-cat-color-choice.png 1432w, /wp-content/uploads/2025/07/Concept-art-cat-color-choice-300x130.png 300w, /wp-content/uploads/2025/07/Concept-art-cat-color-choice-1024x443.png 1024w, /wp-content/uploads/2025/07/Concept-art-cat-color-choice-768x333.png 768w, /wp-content/uploads/2025/07/Concept-art-cat-color-choice-500x216.png 500w, /wp-content/uploads/2025/07/Concept-art-cat-color-choice-800x346.png 800w, /wp-content/uploads/2025/07/Concept-art-cat-color-choice-1280x554.png 1280w" data-sizes="auto" loading="eager">
+		<img decoding="async" width="1432" height="620" src="/wp-content/uploads/2025/07/Concept-art-cat-color-choice.png" class="wp-image-288" alt="" srcset="/wp-content/uploads/2025/07/Concept-art-cat-color-choice.png 1432w, /wp-content/uploads/2025/07/Concept-art-cat-color-choice-300x130.png 300w, /wp-content/uploads/2025/07/Concept-art-cat-color-choice-1024x443.png 1024w, /wp-content/uploads/2025/07/Concept-art-cat-color-choice-768x333.png 768w, /wp-content/uploads/2025/07/Concept-art-cat-color-choice-500x216.png 500w, /wp-content/uploads/2025/07/Concept-art-cat-color-choice-800x346.png 800w, /wp-content/uploads/2025/07/Concept-art-cat-color-choice-1280x554.png 1280w" sizes="(max-width: 1432px) 100vw, 1432px">
 		<div class="vp-portfolio__item-overlay"></div>
 
 		</a>	</div>
@@ -272,8 +249,7 @@ var VPData = {"version":"3.3.16","pro":false,"__":{"couldnt_retrieve_vp":"Couldn
 	<div class="vp-portfolio__item-img">
 			<a href="/wp-content/uploads/2025/07/IWP-cat-sketches-White-version-1920x1440.png">
 	
-		<noscript><img decoding="async" width="1920" height="1440" data-skip-lazy src="/wp-content/uploads/2025/07/IWP-cat-sketches-White-version-1920x1440.png" class="wp-image-289" alt="" srcset="/wp-content/uploads/2025/07/IWP-cat-sketches-White-version-1920x1440.png 1920w, /wp-content/uploads/2025/07/IWP-cat-sketches-White-version-300x225.png 300w, /wp-content/uploads/2025/07/IWP-cat-sketches-White-version-1024x768.png 1024w, /wp-content/uploads/2025/07/IWP-cat-sketches-White-version-768x576.png 768w, /wp-content/uploads/2025/07/IWP-cat-sketches-White-version-1536x1152.png 1536w, /wp-content/uploads/2025/07/IWP-cat-sketches-White-version-2048x1536.png 2048w, /wp-content/uploads/2025/07/IWP-cat-sketches-White-version-500x375.png 500w, /wp-content/uploads/2025/07/IWP-cat-sketches-White-version-800x600.png 800w, /wp-content/uploads/2025/07/IWP-cat-sketches-White-version-1280x960.png 1280w" sizes="(max-width: 1920px) 100vw, 1920px"></noscript>
-<img decoding="async" width="1920" height="1440" src="/wp-content/uploads/2025/07/IWP-cat-sketches-White-version-1920x1440.png" class="wp-image-289 vp-lazyload" alt srcset="data:image/svg+xml;base64,/creatures/PHN2ZyB3aWR0aD0iMTkyMCIgaGVpZ2h0PSIxNDQwIiB2aWV3Qm94PSIwIDAgMTkyMCAxNDQwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjwvc3ZnPg=%3D" data-src="/wp-content/uploads/2025/07/IWP-cat-sketches-White-version-1920x1440.png" data-srcset="/wp-content/uploads/2025/07/IWP-cat-sketches-White-version-1920x1440.png 1920w, /wp-content/uploads/2025/07/IWP-cat-sketches-White-version-300x225.png 300w, /wp-content/uploads/2025/07/IWP-cat-sketches-White-version-1024x768.png 1024w, /wp-content/uploads/2025/07/IWP-cat-sketches-White-version-768x576.png 768w, /wp-content/uploads/2025/07/IWP-cat-sketches-White-version-1536x1152.png 1536w, /wp-content/uploads/2025/07/IWP-cat-sketches-White-version-2048x1536.png 2048w, /wp-content/uploads/2025/07/IWP-cat-sketches-White-version-500x375.png 500w, /wp-content/uploads/2025/07/IWP-cat-sketches-White-version-800x600.png 800w, /wp-content/uploads/2025/07/IWP-cat-sketches-White-version-1280x960.png 1280w" data-sizes="auto" loading="eager">
+		<img decoding="async" width="1920" height="1440" src="/wp-content/uploads/2025/07/IWP-cat-sketches-White-version-1920x1440.png" class="wp-image-289" alt="" srcset="/wp-content/uploads/2025/07/IWP-cat-sketches-White-version-1920x1440.png 1920w, /wp-content/uploads/2025/07/IWP-cat-sketches-White-version-300x225.png 300w, /wp-content/uploads/2025/07/IWP-cat-sketches-White-version-1024x768.png 1024w, /wp-content/uploads/2025/07/IWP-cat-sketches-White-version-768x576.png 768w, /wp-content/uploads/2025/07/IWP-cat-sketches-White-version-1536x1152.png 1536w, /wp-content/uploads/2025/07/IWP-cat-sketches-White-version-2048x1536.png 2048w, /wp-content/uploads/2025/07/IWP-cat-sketches-White-version-500x375.png 500w, /wp-content/uploads/2025/07/IWP-cat-sketches-White-version-800x600.png 800w, /wp-content/uploads/2025/07/IWP-cat-sketches-White-version-1280x960.png 1280w" sizes="(max-width: 1920px) 100vw, 1920px">
 		<div class="vp-portfolio__item-overlay"></div>
 
 		</a>	</div>
@@ -329,8 +305,7 @@ var VPData = {"version":"3.3.16","pro":false,"__":{"couldnt_retrieve_vp":"Couldn
 	<div class="vp-portfolio__item-img">
 			<a href="/wp-content/uploads/2025/07/CatRender-Front.png">
 	
-		<noscript><img loading="lazy" decoding="async" width="1400" height="1080" data-skip-lazy src="/wp-content/uploads/2025/07/CatRender-Front.png" class="wp-image-303" alt="" srcset="/wp-content/uploads/2025/07/CatRender-Front.png 1400w, /wp-content/uploads/2025/07/CatRender-Front-300x231.png 300w, /wp-content/uploads/2025/07/CatRender-Front-1024x790.png 1024w, /wp-content/uploads/2025/07/CatRender-Front-768x592.png 768w, /wp-content/uploads/2025/07/CatRender-Front-500x386.png 500w, /wp-content/uploads/2025/07/CatRender-Front-800x617.png 800w, /wp-content/uploads/2025/07/CatRender-Front-1280x987.png 1280w" sizes="auto, (max-width: 1400px) 100vw, 1400px"></noscript>
-<img decoding="async" width="1400" height="1080" src="/wp-content/uploads/2025/07/CatRender-Front.png" class="wp-image-303 vp-lazyload" alt srcset="data:image/svg+xml;base64,/creatures/PHN2ZyB3aWR0aD0iMTQwMCIgaGVpZ2h0PSIxMDgwIiB2aWV3Qm94PSIwIDAgMTQwMCAxMDgwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjwvc3ZnPg=%3D" data-src="/wp-content/uploads/2025/07/CatRender-Front.png" data-srcset="/wp-content/uploads/2025/07/CatRender-Front.png 1400w, /wp-content/uploads/2025/07/CatRender-Front-300x231.png 300w, /wp-content/uploads/2025/07/CatRender-Front-1024x790.png 1024w, /wp-content/uploads/2025/07/CatRender-Front-768x592.png 768w, /wp-content/uploads/2025/07/CatRender-Front-500x386.png 500w, /wp-content/uploads/2025/07/CatRender-Front-800x617.png 800w, /wp-content/uploads/2025/07/CatRender-Front-1280x987.png 1280w" data-sizes="auto" loading="eager">
+		<img loading="lazy" decoding="async" width="1400" height="1080" src="/wp-content/uploads/2025/07/CatRender-Front.png" class="wp-image-303" alt="" srcset="/wp-content/uploads/2025/07/CatRender-Front.png 1400w, /wp-content/uploads/2025/07/CatRender-Front-300x231.png 300w, /wp-content/uploads/2025/07/CatRender-Front-1024x790.png 1024w, /wp-content/uploads/2025/07/CatRender-Front-768x592.png 768w, /wp-content/uploads/2025/07/CatRender-Front-500x386.png 500w, /wp-content/uploads/2025/07/CatRender-Front-800x617.png 800w, /wp-content/uploads/2025/07/CatRender-Front-1280x987.png 1280w" sizes="auto, (max-width: 1400px) 100vw, 1400px">
 		<div class="vp-portfolio__item-overlay">
 					</div>
 
@@ -349,8 +324,7 @@ var VPData = {"version":"3.3.16","pro":false,"__":{"couldnt_retrieve_vp":"Couldn
 	<div class="vp-portfolio__item-img">
 			<a href="/wp-content/uploads/2025/07/CatRender-Back.png">
 	
-		<noscript><img loading="lazy" decoding="async" width="1400" height="1080" data-skip-lazy src="/wp-content/uploads/2025/07/CatRender-Back.png" class="wp-image-302" alt="" srcset="/wp-content/uploads/2025/07/CatRender-Back.png 1400w, /wp-content/uploads/2025/07/CatRender-Back-300x231.png 300w, /wp-content/uploads/2025/07/CatRender-Back-1024x790.png 1024w, /wp-content/uploads/2025/07/CatRender-Back-768x592.png 768w, /wp-content/uploads/2025/07/CatRender-Back-500x386.png 500w, /wp-content/uploads/2025/07/CatRender-Back-800x617.png 800w, /wp-content/uploads/2025/07/CatRender-Back-1280x987.png 1280w" sizes="auto, (max-width: 1400px) 100vw, 1400px"></noscript>
-<img decoding="async" width="1400" height="1080" src="/wp-content/uploads/2025/07/CatRender-Back.png" class="wp-image-302 vp-lazyload" alt srcset="data:image/svg+xml;base64,/creatures/PHN2ZyB3aWR0aD0iMTQwMCIgaGVpZ2h0PSIxMDgwIiB2aWV3Qm94PSIwIDAgMTQwMCAxMDgwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjwvc3ZnPg=%3D" data-src="/wp-content/uploads/2025/07/CatRender-Back.png" data-srcset="/wp-content/uploads/2025/07/CatRender-Back.png 1400w, /wp-content/uploads/2025/07/CatRender-Back-300x231.png 300w, /wp-content/uploads/2025/07/CatRender-Back-1024x790.png 1024w, /wp-content/uploads/2025/07/CatRender-Back-768x592.png 768w, /wp-content/uploads/2025/07/CatRender-Back-500x386.png 500w, /wp-content/uploads/2025/07/CatRender-Back-800x617.png 800w, /wp-content/uploads/2025/07/CatRender-Back-1280x987.png 1280w" data-sizes="auto" loading="eager">
+		<img loading="lazy" decoding="async" width="1400" height="1080" src="/wp-content/uploads/2025/07/CatRender-Back.png" class="wp-image-302" alt="" srcset="/wp-content/uploads/2025/07/CatRender-Back.png 1400w, /wp-content/uploads/2025/07/CatRender-Back-300x231.png 300w, /wp-content/uploads/2025/07/CatRender-Back-1024x790.png 1024w, /wp-content/uploads/2025/07/CatRender-Back-768x592.png 768w, /wp-content/uploads/2025/07/CatRender-Back-500x386.png 500w, /wp-content/uploads/2025/07/CatRender-Back-800x617.png 800w, /wp-content/uploads/2025/07/CatRender-Back-1280x987.png 1280w" sizes="auto, (max-width: 1400px) 100vw, 1400px">
 		<div class="vp-portfolio__item-overlay">
 					</div>
 
@@ -369,8 +343,7 @@ var VPData = {"version":"3.3.16","pro":false,"__":{"couldnt_retrieve_vp":"Couldn
 	<div class="vp-portfolio__item-img">
 			<a href="/wp-content/uploads/2025/07/CatRenderClose.png">
 	
-		<noscript><img loading="lazy" decoding="async" width="1400" height="1080" data-skip-lazy src="/wp-content/uploads/2025/07/CatRenderClose.png" class="wp-image-304" alt="" srcset="/wp-content/uploads/2025/07/CatRenderClose.png 1400w, /wp-content/uploads/2025/07/CatRenderClose-300x231.png 300w, /wp-content/uploads/2025/07/CatRenderClose-1024x790.png 1024w, /wp-content/uploads/2025/07/CatRenderClose-768x592.png 768w, /wp-content/uploads/2025/07/CatRenderClose-500x386.png 500w, /wp-content/uploads/2025/07/CatRenderClose-800x617.png 800w, /wp-content/uploads/2025/07/CatRenderClose-1280x987.png 1280w" sizes="auto, (max-width: 1400px) 100vw, 1400px"></noscript>
-<img decoding="async" width="1400" height="1080" src="/wp-content/uploads/2025/07/CatRenderClose.png" class="wp-image-304 vp-lazyload" alt srcset="data:image/svg+xml;base64,/creatures/PHN2ZyB3aWR0aD0iMTQwMCIgaGVpZ2h0PSIxMDgwIiB2aWV3Qm94PSIwIDAgMTQwMCAxMDgwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjwvc3ZnPg=%3D" data-src="/wp-content/uploads/2025/07/CatRenderClose.png" data-srcset="/wp-content/uploads/2025/07/CatRenderClose.png 1400w, /wp-content/uploads/2025/07/CatRenderClose-300x231.png 300w, /wp-content/uploads/2025/07/CatRenderClose-1024x790.png 1024w, /wp-content/uploads/2025/07/CatRenderClose-768x592.png 768w, /wp-content/uploads/2025/07/CatRenderClose-500x386.png 500w, /wp-content/uploads/2025/07/CatRenderClose-800x617.png 800w, /wp-content/uploads/2025/07/CatRenderClose-1280x987.png 1280w" data-sizes="auto" loading="eager">
+		<img loading="lazy" decoding="async" width="1400" height="1080" src="/wp-content/uploads/2025/07/CatRenderClose.png" class="wp-image-304" alt="" srcset="/wp-content/uploads/2025/07/CatRenderClose.png 1400w, /wp-content/uploads/2025/07/CatRenderClose-300x231.png 300w, /wp-content/uploads/2025/07/CatRenderClose-1024x790.png 1024w, /wp-content/uploads/2025/07/CatRenderClose-768x592.png 768w, /wp-content/uploads/2025/07/CatRenderClose-500x386.png 500w, /wp-content/uploads/2025/07/CatRenderClose-800x617.png 800w, /wp-content/uploads/2025/07/CatRenderClose-1280x987.png 1280w" sizes="auto, (max-width: 1400px) 100vw, 1400px">
 		<div class="vp-portfolio__item-overlay">
 					</div>
 
@@ -417,8 +390,7 @@ var VPData = {"version":"3.3.16","pro":false,"__":{"couldnt_retrieve_vp":"Couldn
 	<div class="vp-portfolio__item-img">
 			<a href="/wp-content/uploads/2025/07/Cat-UV-1920x1920.png">
 	
-		<noscript><img loading="lazy" decoding="async" width="1920" height="1920" data-skip-lazy src="/wp-content/uploads/2025/07/Cat-UV-1920x1920.png" class="wp-image-306" alt="" srcset="/wp-content/uploads/2025/07/Cat-UV-1920x1920.png 1920w, /wp-content/uploads/2025/07/Cat-UV-300x300.png 300w, /wp-content/uploads/2025/07/Cat-UV-1024x1024.png 1024w, /wp-content/uploads/2025/07/Cat-UV-150x150.png 150w, /wp-content/uploads/2025/07/Cat-UV-768x768.png 768w, /wp-content/uploads/2025/07/Cat-UV-1536x1536.png 1536w, /wp-content/uploads/2025/07/Cat-UV-500x500.png 500w, /wp-content/uploads/2025/07/Cat-UV-800x800.png 800w, /wp-content/uploads/2025/07/Cat-UV-1280x1280.png 1280w, /wp-content/uploads/2025/07/Cat-UV.png 2048w" sizes="auto, (max-width: 1920px) 100vw, 1920px"></noscript>
-<img decoding="async" width="1920" height="1920" src="/wp-content/uploads/2025/07/Cat-UV-1920x1920.png" class="wp-image-306 vp-lazyload" alt srcset="data:image/svg+xml;base64,/creatures/PHN2ZyB3aWR0aD0iMTkyMCIgaGVpZ2h0PSIxOTIwIiB2aWV3Qm94PSIwIDAgMTkyMCAxOTIwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjwvc3ZnPg=%3D" data-src="/wp-content/uploads/2025/07/Cat-UV-1920x1920.png" data-srcset="/wp-content/uploads/2025/07/Cat-UV-1920x1920.png 1920w, /wp-content/uploads/2025/07/Cat-UV-300x300.png 300w, /wp-content/uploads/2025/07/Cat-UV-1024x1024.png 1024w, /wp-content/uploads/2025/07/Cat-UV-150x150.png 150w, /wp-content/uploads/2025/07/Cat-UV-768x768.png 768w, /wp-content/uploads/2025/07/Cat-UV-1536x1536.png 1536w, /wp-content/uploads/2025/07/Cat-UV-500x500.png 500w, /wp-content/uploads/2025/07/Cat-UV-800x800.png 800w, /wp-content/uploads/2025/07/Cat-UV-1280x1280.png 1280w, /wp-content/uploads/2025/07/Cat-UV.png 2048w" data-sizes="auto" loading="eager">
+		<img loading="lazy" decoding="async" width="1920" height="1920" src="/wp-content/uploads/2025/07/Cat-UV-1920x1920.png" class="wp-image-306" alt="" srcset="/wp-content/uploads/2025/07/Cat-UV-1920x1920.png 1920w, /wp-content/uploads/2025/07/Cat-UV-300x300.png 300w, /wp-content/uploads/2025/07/Cat-UV-1024x1024.png 1024w, /wp-content/uploads/2025/07/Cat-UV-150x150.png 150w, /wp-content/uploads/2025/07/Cat-UV-768x768.png 768w, /wp-content/uploads/2025/07/Cat-UV-1536x1536.png 1536w, /wp-content/uploads/2025/07/Cat-UV-500x500.png 500w, /wp-content/uploads/2025/07/Cat-UV-800x800.png 800w, /wp-content/uploads/2025/07/Cat-UV-1280x1280.png 1280w, /wp-content/uploads/2025/07/Cat-UV.png 2048w" sizes="auto, (max-width: 1920px) 100vw, 1920px">
 		<div class="vp-portfolio__item-overlay"></div>
 
 		</a>	</div>
@@ -448,8 +420,7 @@ var VPData = {"version":"3.3.16","pro":false,"__":{"couldnt_retrieve_vp":"Couldn
 	<div class="vp-portfolio__item-img">
 			<a href="/wp-content/uploads/2025/07/CatAlbedo-1920x1920.png">
 	
-		<noscript><img loading="lazy" decoding="async" width="1920" height="1920" data-skip-lazy src="/wp-content/uploads/2025/07/CatAlbedo-1920x1920.png" class="wp-image-307" alt="" srcset="/wp-content/uploads/2025/07/CatAlbedo-1920x1920.png 1920w, /wp-content/uploads/2025/07/CatAlbedo-300x300.png 300w, /wp-content/uploads/2025/07/CatAlbedo-1024x1024.png 1024w, /wp-content/uploads/2025/07/CatAlbedo-150x150.png 150w, /wp-content/uploads/2025/07/CatAlbedo-768x768.png 768w, /wp-content/uploads/2025/07/CatAlbedo-1536x1536.png 1536w, /wp-content/uploads/2025/07/CatAlbedo-500x500.png 500w, /wp-content/uploads/2025/07/CatAlbedo-800x800.png 800w, /wp-content/uploads/2025/07/CatAlbedo-1280x1280.png 1280w, /wp-content/uploads/2025/07/CatAlbedo.png 2048w" sizes="auto, (max-width: 1920px) 100vw, 1920px"></noscript>
-<img decoding="async" width="1920" height="1920" src="/wp-content/uploads/2025/07/CatAlbedo-1920x1920.png" class="wp-image-307 vp-lazyload" alt srcset="data:image/svg+xml;base64,/creatures/PHN2ZyB3aWR0aD0iMTkyMCIgaGVpZ2h0PSIxOTIwIiB2aWV3Qm94PSIwIDAgMTkyMCAxOTIwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjwvc3ZnPg=%3D" data-src="/wp-content/uploads/2025/07/CatAlbedo-1920x1920.png" data-srcset="/wp-content/uploads/2025/07/CatAlbedo-1920x1920.png 1920w, /wp-content/uploads/2025/07/CatAlbedo-300x300.png 300w, /wp-content/uploads/2025/07/CatAlbedo-1024x1024.png 1024w, /wp-content/uploads/2025/07/CatAlbedo-150x150.png 150w, /wp-content/uploads/2025/07/CatAlbedo-768x768.png 768w, /wp-content/uploads/2025/07/CatAlbedo-1536x1536.png 1536w, /wp-content/uploads/2025/07/CatAlbedo-500x500.png 500w, /wp-content/uploads/2025/07/CatAlbedo-800x800.png 800w, /wp-content/uploads/2025/07/CatAlbedo-1280x1280.png 1280w, /wp-content/uploads/2025/07/CatAlbedo.png 2048w" data-sizes="auto" loading="eager">
+		<img loading="lazy" decoding="async" width="1920" height="1920" src="/wp-content/uploads/2025/07/CatAlbedo-1920x1920.png" class="wp-image-307" alt="" srcset="/wp-content/uploads/2025/07/CatAlbedo-1920x1920.png 1920w, /wp-content/uploads/2025/07/CatAlbedo-300x300.png 300w, /wp-content/uploads/2025/07/CatAlbedo-1024x1024.png 1024w, /wp-content/uploads/2025/07/CatAlbedo-150x150.png 150w, /wp-content/uploads/2025/07/CatAlbedo-768x768.png 768w, /wp-content/uploads/2025/07/CatAlbedo-1536x1536.png 1536w, /wp-content/uploads/2025/07/CatAlbedo-500x500.png 500w, /wp-content/uploads/2025/07/CatAlbedo-800x800.png 800w, /wp-content/uploads/2025/07/CatAlbedo-1280x1280.png 1280w, /wp-content/uploads/2025/07/CatAlbedo.png 2048w" sizes="auto, (max-width: 1920px) 100vw, 1920px">
 		<div class="vp-portfolio__item-overlay"></div>
 
 		</a>	</div>
@@ -479,8 +450,7 @@ var VPData = {"version":"3.3.16","pro":false,"__":{"couldnt_retrieve_vp":"Couldn
 	<div class="vp-portfolio__item-img">
 			<a href="/wp-content/uploads/2025/07/CatRoughness-1920x1920.png">
 	
-		<noscript><img loading="lazy" decoding="async" width="1920" height="1920" data-skip-lazy src="/wp-content/uploads/2025/07/CatRoughness-1920x1920.png" class="wp-image-308" alt="" srcset="/wp-content/uploads/2025/07/CatRoughness-1920x1920.png 1920w, /wp-content/uploads/2025/07/CatRoughness-300x300.png 300w, /wp-content/uploads/2025/07/CatRoughness-1024x1024.png 1024w, /wp-content/uploads/2025/07/CatRoughness-150x150.png 150w, /wp-content/uploads/2025/07/CatRoughness-768x768.png 768w, /wp-content/uploads/2025/07/CatRoughness-1536x1536.png 1536w, /wp-content/uploads/2025/07/CatRoughness-500x500.png 500w, /wp-content/uploads/2025/07/CatRoughness-800x800.png 800w, /wp-content/uploads/2025/07/CatRoughness-1280x1280.png 1280w, /wp-content/uploads/2025/07/CatRoughness.png 2048w" sizes="auto, (max-width: 1920px) 100vw, 1920px"></noscript>
-<img decoding="async" width="1920" height="1920" src="/wp-content/uploads/2025/07/CatRoughness-1920x1920.png" class="wp-image-308 vp-lazyload" alt srcset="data:image/svg+xml;base64,/creatures/PHN2ZyB3aWR0aD0iMTkyMCIgaGVpZ2h0PSIxOTIwIiB2aWV3Qm94PSIwIDAgMTkyMCAxOTIwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjwvc3ZnPg=%3D" data-src="/wp-content/uploads/2025/07/CatRoughness-1920x1920.png" data-srcset="/wp-content/uploads/2025/07/CatRoughness-1920x1920.png 1920w, /wp-content/uploads/2025/07/CatRoughness-300x300.png 300w, /wp-content/uploads/2025/07/CatRoughness-1024x1024.png 1024w, /wp-content/uploads/2025/07/CatRoughness-150x150.png 150w, /wp-content/uploads/2025/07/CatRoughness-768x768.png 768w, /wp-content/uploads/2025/07/CatRoughness-1536x1536.png 1536w, /wp-content/uploads/2025/07/CatRoughness-500x500.png 500w, /wp-content/uploads/2025/07/CatRoughness-800x800.png 800w, /wp-content/uploads/2025/07/CatRoughness-1280x1280.png 1280w, /wp-content/uploads/2025/07/CatRoughness.png 2048w" data-sizes="auto" loading="eager">
+		<img loading="lazy" decoding="async" width="1920" height="1920" src="/wp-content/uploads/2025/07/CatRoughness-1920x1920.png" class="wp-image-308" alt="" srcset="/wp-content/uploads/2025/07/CatRoughness-1920x1920.png 1920w, /wp-content/uploads/2025/07/CatRoughness-300x300.png 300w, /wp-content/uploads/2025/07/CatRoughness-1024x1024.png 1024w, /wp-content/uploads/2025/07/CatRoughness-150x150.png 150w, /wp-content/uploads/2025/07/CatRoughness-768x768.png 768w, /wp-content/uploads/2025/07/CatRoughness-1536x1536.png 1536w, /wp-content/uploads/2025/07/CatRoughness-500x500.png 500w, /wp-content/uploads/2025/07/CatRoughness-800x800.png 800w, /wp-content/uploads/2025/07/CatRoughness-1280x1280.png 1280w, /wp-content/uploads/2025/07/CatRoughness.png 2048w" sizes="auto, (max-width: 1920px) 100vw, 1920px">
 		<div class="vp-portfolio__item-overlay"></div>
 
 		</a>	</div>
@@ -536,8 +506,7 @@ var VPData = {"version":"3.3.16","pro":false,"__":{"couldnt_retrieve_vp":"Couldn
 	<div class="vp-portfolio__item-img">
 			<a href="/wp-content/uploads/2025/07/CatRender.png">
 	
-		<noscript><img loading="lazy" decoding="async" width="1400" height="1080" data-skip-lazy src="/wp-content/uploads/2025/07/CatRender.png" class="wp-image-93" alt="" srcset="/wp-content/uploads/2025/07/CatRender.png 1400w, /wp-content/uploads/2025/07/CatRender-300x231.png 300w, /wp-content/uploads/2025/07/CatRender-1024x790.png 1024w, /wp-content/uploads/2025/07/CatRender-768x592.png 768w, /wp-content/uploads/2025/07/CatRender-500x386.png 500w, /wp-content/uploads/2025/07/CatRender-800x617.png 800w, /wp-content/uploads/2025/07/CatRender-1280x987.png 1280w" sizes="auto, (max-width: 1400px) 100vw, 1400px"></noscript>
-<img decoding="async" width="1400" height="1080" src="/wp-content/uploads/2025/07/CatRender.png" class="wp-image-93 vp-lazyload" alt srcset="data:image/svg+xml;base64,/creatures/PHN2ZyB3aWR0aD0iMTQwMCIgaGVpZ2h0PSIxMDgwIiB2aWV3Qm94PSIwIDAgMTQwMCAxMDgwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjwvc3ZnPg=%3D" data-src="/wp-content/uploads/2025/07/CatRender.png" data-srcset="/wp-content/uploads/2025/07/CatRender.png 1400w, /wp-content/uploads/2025/07/CatRender-300x231.png 300w, /wp-content/uploads/2025/07/CatRender-1024x790.png 1024w, /wp-content/uploads/2025/07/CatRender-768x592.png 768w, /wp-content/uploads/2025/07/CatRender-500x386.png 500w, /wp-content/uploads/2025/07/CatRender-800x617.png 800w, /wp-content/uploads/2025/07/CatRender-1280x987.png 1280w" data-sizes="auto" loading="eager">
+		<img loading="lazy" decoding="async" width="1400" height="1080" src="/wp-content/uploads/2025/07/CatRender.png" class="wp-image-93" alt="" srcset="/wp-content/uploads/2025/07/CatRender.png 1400w, /wp-content/uploads/2025/07/CatRender-300x231.png 300w, /wp-content/uploads/2025/07/CatRender-1024x790.png 1024w, /wp-content/uploads/2025/07/CatRender-768x592.png 768w, /wp-content/uploads/2025/07/CatRender-500x386.png 500w, /wp-content/uploads/2025/07/CatRender-800x617.png 800w, /wp-content/uploads/2025/07/CatRender-1280x987.png 1280w" sizes="auto, (max-width: 1400px) 100vw, 1400px">
 		<div class="vp-portfolio__item-overlay">
 					</div>
 
@@ -556,8 +525,7 @@ var VPData = {"version":"3.3.16","pro":false,"__":{"couldnt_retrieve_vp":"Couldn
 	<div class="vp-portfolio__item-img">
 			<a href="/wp-content/uploads/2025/07/CatEyeOpen.png">
 	
-		<noscript><img loading="lazy" decoding="async" width="1400" height="1080" data-skip-lazy src="/wp-content/uploads/2025/07/CatEyeOpen.png" class="wp-image-335" alt="" srcset="/wp-content/uploads/2025/07/CatEyeOpen.png 1400w, /wp-content/uploads/2025/07/CatEyeOpen-300x231.png 300w, /wp-content/uploads/2025/07/CatEyeOpen-1024x790.png 1024w, /wp-content/uploads/2025/07/CatEyeOpen-768x592.png 768w, /wp-content/uploads/2025/07/CatEyeOpen-500x386.png 500w, /wp-content/uploads/2025/07/CatEyeOpen-800x617.png 800w, /wp-content/uploads/2025/07/CatEyeOpen-1280x987.png 1280w" sizes="auto, (max-width: 1400px) 100vw, 1400px"></noscript>
-<img decoding="async" width="1400" height="1080" src="/wp-content/uploads/2025/07/CatEyeOpen.png" class="wp-image-335 vp-lazyload" alt srcset="data:image/svg+xml;base64,/creatures/PHN2ZyB3aWR0aD0iMTQwMCIgaGVpZ2h0PSIxMDgwIiB2aWV3Qm94PSIwIDAgMTQwMCAxMDgwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjwvc3ZnPg=%3D" data-src="/wp-content/uploads/2025/07/CatEyeOpen.png" data-srcset="/wp-content/uploads/2025/07/CatEyeOpen.png 1400w, /wp-content/uploads/2025/07/CatEyeOpen-300x231.png 300w, /wp-content/uploads/2025/07/CatEyeOpen-1024x790.png 1024w, /wp-content/uploads/2025/07/CatEyeOpen-768x592.png 768w, /wp-content/uploads/2025/07/CatEyeOpen-500x386.png 500w, /wp-content/uploads/2025/07/CatEyeOpen-800x617.png 800w, /wp-content/uploads/2025/07/CatEyeOpen-1280x987.png 1280w" data-sizes="auto" loading="eager">
+		<img loading="lazy" decoding="async" width="1400" height="1080" src="/wp-content/uploads/2025/07/CatEyeOpen.png" class="wp-image-335" alt="" srcset="/wp-content/uploads/2025/07/CatEyeOpen.png 1400w, /wp-content/uploads/2025/07/CatEyeOpen-300x231.png 300w, /wp-content/uploads/2025/07/CatEyeOpen-1024x790.png 1024w, /wp-content/uploads/2025/07/CatEyeOpen-768x592.png 768w, /wp-content/uploads/2025/07/CatEyeOpen-500x386.png 500w, /wp-content/uploads/2025/07/CatEyeOpen-800x617.png 800w, /wp-content/uploads/2025/07/CatEyeOpen-1280x987.png 1280w" sizes="auto, (max-width: 1400px) 100vw, 1400px">
 		<div class="vp-portfolio__item-overlay">
 					</div>
 
@@ -576,8 +544,7 @@ var VPData = {"version":"3.3.16","pro":false,"__":{"couldnt_retrieve_vp":"Couldn
 	<div class="vp-portfolio__item-img">
 			<a href="/wp-content/uploads/2025/07/CatMouthOpen.png">
 	
-		<noscript><img loading="lazy" decoding="async" width="1400" height="1080" data-skip-lazy src="/wp-content/uploads/2025/07/CatMouthOpen.png" class="wp-image-334" alt="" srcset="/wp-content/uploads/2025/07/CatMouthOpen.png 1400w, /wp-content/uploads/2025/07/CatMouthOpen-300x231.png 300w, /wp-content/uploads/2025/07/CatMouthOpen-1024x790.png 1024w, /wp-content/uploads/2025/07/CatMouthOpen-768x592.png 768w, /wp-content/uploads/2025/07/CatMouthOpen-500x386.png 500w, /wp-content/uploads/2025/07/CatMouthOpen-800x617.png 800w, /wp-content/uploads/2025/07/CatMouthOpen-1280x987.png 1280w" sizes="auto, (max-width: 1400px) 100vw, 1400px"></noscript>
-<img decoding="async" width="1400" height="1080" src="/wp-content/uploads/2025/07/CatMouthOpen.png" class="wp-image-334 vp-lazyload" alt srcset="data:image/svg+xml;base64,/creatures/PHN2ZyB3aWR0aD0iMTQwMCIgaGVpZ2h0PSIxMDgwIiB2aWV3Qm94PSIwIDAgMTQwMCAxMDgwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjwvc3ZnPg=%3D" data-src="/wp-content/uploads/2025/07/CatMouthOpen.png" data-srcset="/wp-content/uploads/2025/07/CatMouthOpen.png 1400w, /wp-content/uploads/2025/07/CatMouthOpen-300x231.png 300w, /wp-content/uploads/2025/07/CatMouthOpen-1024x790.png 1024w, /wp-content/uploads/2025/07/CatMouthOpen-768x592.png 768w, /wp-content/uploads/2025/07/CatMouthOpen-500x386.png 500w, /wp-content/uploads/2025/07/CatMouthOpen-800x617.png 800w, /wp-content/uploads/2025/07/CatMouthOpen-1280x987.png 1280w" data-sizes="auto" loading="eager">
+		<img loading="lazy" decoding="async" width="1400" height="1080" src="/wp-content/uploads/2025/07/CatMouthOpen.png" class="wp-image-334" alt="" srcset="/wp-content/uploads/2025/07/CatMouthOpen.png 1400w, /wp-content/uploads/2025/07/CatMouthOpen-300x231.png 300w, /wp-content/uploads/2025/07/CatMouthOpen-1024x790.png 1024w, /wp-content/uploads/2025/07/CatMouthOpen-768x592.png 768w, /wp-content/uploads/2025/07/CatMouthOpen-500x386.png 500w, /wp-content/uploads/2025/07/CatMouthOpen-800x617.png 800w, /wp-content/uploads/2025/07/CatMouthOpen-1280x987.png 1280w" sizes="auto, (max-width: 1400px) 100vw, 1400px">
 		<div class="vp-portfolio__item-overlay">
 					</div>
 
@@ -649,41 +616,15 @@ var VPData = {"version":"3.3.16","pro":false,"__":{"couldnt_retrieve_vp":"Couldn
 <script src="/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
 <script src="/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
 <script src="/wp-content/plugins/visual-portfolio/build/assets/js/pagination-infinite.js?ver=50005113e26cd2b547c0" id="visual-portfolio-pagination-infinite-js"></script>
-<script id="fancybox-js-before">(function($){
-                if (!$) {
-                    return;
-                }
-
-				function escAttr(text) {
-					return text.replace(/&/g, "&")
-						.replace(/<\/g, "<")
-						.replace(/>/g, ">")
-						.replace(/"/g, """)
-						.replace(/"/g, "'");
-				}
-
-				$(document).on("click", "[data-fancybox]", function (e) {
-					const $this = $(this);
-					const caption = $this.attr("data-caption");
-
-					if (caption) {
-						$this.attr("data-caption", escAttr(caption));
-					}
-				});
-            }(window.jQuery));</script>
-<script src="/wp-content/plugins/visual-portfolio/assets/vendor/fancybox/dist/jquery.fancybox.min.js?ver=3.5.7" id="fancybox-js"></script>
+<script src="/wp-content/plugins/visual-portfolio/assets/vendor/photoswipe/dist/photoswipe.min.js?ver=4.1.3" id="photoswipe-js"></script>
+<script src="/wp-content/plugins/visual-portfolio/assets/vendor/photoswipe/dist/photoswipe-ui-default.min.js?ver=4.1.3" id="photoswipe-ui-default-js"></script>
 <script src="/wp-content/plugins/visual-portfolio/build/assets/js/popup-gallery.js?ver=55efef1afe2df407985b" id="visual-portfolio-popup-gallery-js"></script>
-<script src="/wp-content/plugins/visual-portfolio/build/assets/js/plugin-fancybox.js?ver=1ac13b0d4b49a75c29e7" id="visual-portfolio-plugin-fancybox-js"></script>
+<script src="/wp-content/plugins/visual-portfolio/build/assets/js/plugin-photoswipe.js?ver=19deb59d99d2eea70e05" id="visual-portfolio-plugin-photoswipe-js"></script>
 <script src="/wp-content/plugins/visual-portfolio/assets/vendor/isotope-layout/dist/isotope.pkgd.min.js?ver=3.0.6" id="isotope-js"></script>
 <script src="/wp-content/plugins/visual-portfolio/build/assets/js/plugin-isotope.js?ver=800521e4ecfa4b44d316" id="visual-portfolio-plugin-isotope-js"></script>
 <script src="/wp-content/plugins/visual-portfolio/build/assets/js/layout-masonry.js?ver=79d319e569ac2b2c1a79" id="visual-portfolio-layout-masonry-js"></script>
 <script src="/wp-content/plugins/visual-portfolio/assets/vendor/simplebar/dist/simplebar.min.js?ver=5.3.0" id="simplebar-js"></script>
 <script src="/wp-content/plugins/visual-portfolio/build/assets/js/custom-scrollbar.js?ver=1b0797e554b11e494886" id="visual-portfolio-custom-scrollbar-js"></script>
-<script src="/wp-content/plugins/visual-portfolio/build/assets/js/lazysizes-cfg.js?ver=d2bb8f65b3f9b03b1fba" id="lazysizes-config-js"></script>
-<script src="/wp-content/plugins/visual-portfolio/build/assets/js/lazysizes-object-fit-cover.js?ver=4.1.0" id="lazysizes-object-fit-cover-js"></script>
-<script src="/wp-content/plugins/visual-portfolio/build/assets/js/lazysizes-swiper-duplicates-load.js?ver=040890e2fcf3f6049afe" id="lazysizes-swiper-duplicates-load-js"></script>
-<script src="/wp-content/plugins/visual-portfolio/assets/vendor/lazysizes/lazysizes.min.js?ver=5.3.2" id="lazysizes-js"></script>
-<script src="/wp-content/plugins/visual-portfolio/build/assets/js/lazyload.js?ver=68514291aaca509de970" id="visual-portfolio-lazyload-js"></script>
 <script src="/wp-content/plugins/visual-portfolio/build/assets/js/layout-tiles.js?ver=244fe16263f81c7b1f79" id="visual-portfolio-layout-tiles-js"></script>
 <script src="/wp-includes/js/imagesloaded.min.js?ver=5.0.0" id="imagesloaded-js"></script>
 <script src="/wp-content/plugins/visual-portfolio/build/assets/js/main.js?ver=2a4ca84b70d8a489b8a6" id="visual-portfolio-js"></script>
