@@ -35,7 +35,6 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 <link rel="stylesheet" id="visual-portfolio-layout-slider-css" href="/wp-content/plugins/visual-portfolio/build/assets/css/layout-slider.css?ver=1751675712" media="all">
 <link rel="stylesheet" id="simplebar-css" href="/wp-content/plugins/visual-portfolio/assets/vendor/simplebar/dist/simplebar.min.css?ver=5.3.0" media="all">
 <link rel="stylesheet" id="visual-portfolio-custom-scrollbar-css" href="/wp-content/plugins/visual-portfolio/build/assets/css/custom-scrollbar.css?ver=1751675712" media="all">
-<link rel="stylesheet" id="visual-portfolio-lazyload-css" href="/wp-content/plugins/visual-portfolio/build/assets/css/lazyload.css?ver=1751675712" media="all">
 <link rel="stylesheet" id="visual-portfolio-errors-default-css" href="/wp-content/plugins/visual-portfolio/templates/errors/style.css?ver=1751675713" media="all">
 <link rel="stylesheet" id="visual-portfolio-items-style-default-css" href="/wp-content/plugins/visual-portfolio/templates/items-list/items-style/style.css?ver=1751675713" media="all">
 <link rel="stylesheet" id="visual-portfolio-notices-default-css" href="/wp-content/plugins/visual-portfolio/templates/notices/style.css?ver=1751675713" media="all">
@@ -110,29 +109,8 @@ var VPData = {"version":"3.3.16","pro":false,"__":{"couldnt_retrieve_vp":"Couldn
 		</noscript>
 		<script type="importmap" id="wp-importmap">{"imports":{"@wordpress\/interactivity":"\/wp-includes\/js\/dist\/script-modules\/interactivity\/index.min.js?ver=55aebb6e0a16726baffb"}}</script>
 <script type="module" src="/wp-includes/js/dist/script-modules/block-library/navigation/view.min.js?ver=61572d447d60c0aa5240" id="@wordpress/block-library/navigation/view-js-module"></script>
-<link rel="modulepreload" href="/wp-includes/js/dist/script-modules/interactivity/index.min.js?ver=55aebb6e0a16726baffb" id="@wordpress/interactivity-js-modulepreload">		<style type="text/css">/* If html does not have either class, do not show lazy loaded images. */
-			html:not(.vp-lazyload-enabled):not(.js) .vp-lazyload {
-				display: none;
-			}</style>
-		<script>document.documentElement.classList.add(
-				'vp-lazyload-enabled'
-			);</script>
-				<script>(function(){
-				// Check if fallback is not necessary.
-				if ( CSS.supports('selector(:has(div))') ) {
-					return;
-				}
-
-				var linkTag = document.createElement("link");
-				linkTag.setAttribute('rel', 'stylesheet');
-				linkTag.setAttribute('href', '/wp-content/plugins/visual-portfolio/build/assets/css/lazyload-fallback.css?ver=3.3.16');
-				document.head.appendChild(linkTag);
-
-				var scriptTag = document.createElement("script");
-				scriptTag.setAttribute('src', '/wp-content/plugins/visual-portfolio/build/assets/js/lazyload-fallback.js?ver=3.3.16');
-				document.head.appendChild(scriptTag);
-			}());</script>
-		<style class="wp-fonts-local">@font-face{font-family:"Source Sans Pro";font-style:normal;font-weight:400;font-display:fallback;src:url('/wp-content/themes/the-minimal-blogger/assets/fonts/source_sans_pro/SourceSansPro-Regular.ttf') format('truetype');font-stretch:normal;}
+<link rel="modulepreload" href="/wp-includes/js/dist/script-modules/interactivity/index.min.js?ver=55aebb6e0a16726baffb" id="@wordpress/interactivity-js-modulepreload">
+<style class="wp-fonts-local">@font-face{font-family:"Source Sans Pro";font-style:normal;font-weight:400;font-display:fallback;src:url('/wp-content/themes/the-minimal-blogger/assets/fonts/source_sans_pro/SourceSansPro-Regular.ttf') format('truetype');font-stretch:normal;}
 @font-face{font-family:"Source Sans Pro";font-style:normal;font-weight:600;font-display:fallback;src:url('/wp-content/themes/the-minimal-blogger/assets/fonts/source_sans_pro/SourceSansPro-SemiBold.ttf') format('truetype');font-stretch:normal;}
 @font-face{font-family:"Source Sans Pro";font-style:normal;font-weight:700;font-display:fallback;src:url('/wp-content/themes/the-minimal-blogger/assets/fonts/source_sans_pro/SourceSansPro-Bold.ttf') format('truetype');font-stretch:normal;}
 @font-face{font-family:"Source Sans Pro";font-style:italic;font-weight:400;font-display:fallback;src:url('/wp-content/themes/the-minimal-blogger/assets/fonts/source_sans_pro/SourceSansPro-Italic.ttf') format('truetype');font-stretch:normal;}
@@ -157,11 +135,11 @@ var VPData = {"version":"3.3.16","pro":false,"__":{"couldnt_retrieve_vp":"Couldn
 							<button aria-label="Close menu" class="wp-block-navigation__responsive-container-close" data-wp-on-async--click="actions.closeMenuOnClick"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="m13.06 12 6.47-6.47-1.06-1.06L12 10.94 5.53 4.47 4.47 5.53 10.94 12l-6.47 6.47 1.06 1.06L12 13.06l6.47 6.47 1.06-1.06L13.06 12Z"></path></svg></button>
 							<div class="wp-block-navigation__responsive-container-content" data-wp-watch="callbacks.focusFirstElement" id="modal-1-content">
 								<ul class="wp-block-navigation__container is-responsive items-justified-center wp-block-navigation">
-<li class=" wp-block-navigation-item current-menu-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="/" aria-current="page"><span class="wp-block-navigation-item__label">Home</span></a></li>
-<li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="/characters/"><span class="wp-block-navigation-item__label">Characters</span></a></li>
-<li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="/creatures/"><span class="wp-block-navigation-item__label">Creatures</span></a></li>
-<li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="/environments/"><span class="wp-block-navigation-item__label">Environments</span></a></li>
-<li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="/contact/"><span class="wp-block-navigation-item__label">Contact</span></a></li>
+<li class=" wp-block-navigation-item current-menu-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="http://portfolio-site.local/" aria-current="page"><span class="wp-block-navigation-item__label">Home</span></a></li>
+<li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="http://portfolio-site.local/characters/"><span class="wp-block-navigation-item__label">Characters</span></a></li>
+<li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="http://portfolio-site.local/creatures/"><span class="wp-block-navigation-item__label">Creatures</span></a></li>
+<li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="http://portfolio-site.local/environments/"><span class="wp-block-navigation-item__label">Environments</span></a></li>
+<li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="http://portfolio-site.local/contact/"><span class="wp-block-navigation-item__label">Contact</span></a></li>
 </ul>
 							</div>
 						</div>
@@ -192,8 +170,7 @@ var VPData = {"version":"3.3.16","pro":false,"__":{"couldnt_retrieve_vp":"Couldn
 	<div class="vp-portfolio__item-img">
 			<a href="/wp-content/uploads/2025/07/Janet-Render.png">
 	
-		<noscript><img fetchpriority="high" decoding="async" width="1400" height="1080" data-skip-lazy src="/wp-content/uploads/2025/07/Janet-Render.png" class="wp-image-91" alt="" srcset="/wp-content/uploads/2025/07/Janet-Render.png 1400w, /wp-content/uploads/2025/07/Janet-Render-300x231.png 300w, /wp-content/uploads/2025/07/Janet-Render-1024x790.png 1024w, /wp-content/uploads/2025/07/Janet-Render-768x592.png 768w, /wp-content/uploads/2025/07/Janet-Render-500x386.png 500w, /wp-content/uploads/2025/07/Janet-Render-800x617.png 800w, /wp-content/uploads/2025/07/Janet-Render-1280x987.png 1280w" sizes="(max-width: 1400px) 100vw, 1400px"></noscript>
-<img decoding="async" width="1400" height="1080" src="/wp-content/uploads/2025/07/Janet-Render.png" class="wp-image-91 vp-lazyload" alt srcset="data:image/svg+xml;base64,/PHN2ZyB3aWR0aD0iMTQwMCIgaGVpZ2h0PSIxMDgwIiB2aWV3Qm94PSIwIDAgMTQwMCAxMDgwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjwvc3ZnPg=%3D" data-src="/wp-content/uploads/2025/07/Janet-Render.png" data-srcset="/wp-content/uploads/2025/07/Janet-Render.png 1400w, /wp-content/uploads/2025/07/Janet-Render-300x231.png 300w, /wp-content/uploads/2025/07/Janet-Render-1024x790.png 1024w, /wp-content/uploads/2025/07/Janet-Render-768x592.png 768w, /wp-content/uploads/2025/07/Janet-Render-500x386.png 500w, /wp-content/uploads/2025/07/Janet-Render-800x617.png 800w, /wp-content/uploads/2025/07/Janet-Render-1280x987.png 1280w" data-sizes="auto" loading="eager">
+		<img fetchpriority="high" decoding="async" width="1400" height="1080" src="/wp-content/uploads/2025/07/Janet-Render.png" class="wp-image-91" alt="" srcset="/wp-content/uploads/2025/07/Janet-Render.png 1400w, /wp-content/uploads/2025/07/Janet-Render-300x231.png 300w, /wp-content/uploads/2025/07/Janet-Render-1024x790.png 1024w, /wp-content/uploads/2025/07/Janet-Render-768x592.png 768w, /wp-content/uploads/2025/07/Janet-Render-500x386.png 500w, /wp-content/uploads/2025/07/Janet-Render-800x617.png 800w, /wp-content/uploads/2025/07/Janet-Render-1280x987.png 1280w" sizes="(max-width: 1400px) 100vw, 1400px">
 		<div class="vp-portfolio__item-overlay">
 					</div>
 
@@ -212,8 +189,7 @@ var VPData = {"version":"3.3.16","pro":false,"__":{"couldnt_retrieve_vp":"Couldn
 	<div class="vp-portfolio__item-img">
 			<a href="/wp-content/uploads/2025/07/CatRender.png">
 	
-		<noscript><img decoding="async" width="1400" height="1080" data-skip-lazy src="/wp-content/uploads/2025/07/CatRender.png" class="wp-image-93" alt="" srcset="/wp-content/uploads/2025/07/CatRender.png 1400w, /wp-content/uploads/2025/07/CatRender-300x231.png 300w, /wp-content/uploads/2025/07/CatRender-1024x790.png 1024w, /wp-content/uploads/2025/07/CatRender-768x592.png 768w, /wp-content/uploads/2025/07/CatRender-500x386.png 500w, /wp-content/uploads/2025/07/CatRender-800x617.png 800w, /wp-content/uploads/2025/07/CatRender-1280x987.png 1280w" sizes="(max-width: 1400px) 100vw, 1400px"></noscript>
-<img decoding="async" width="1400" height="1080" src="/wp-content/uploads/2025/07/CatRender.png" class="wp-image-93 vp-lazyload" alt srcset="data:image/svg+xml;base64,/PHN2ZyB3aWR0aD0iMTQwMCIgaGVpZ2h0PSIxMDgwIiB2aWV3Qm94PSIwIDAgMTQwMCAxMDgwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjwvc3ZnPg=%3D" data-src="/wp-content/uploads/2025/07/CatRender.png" data-srcset="/wp-content/uploads/2025/07/CatRender.png 1400w, /wp-content/uploads/2025/07/CatRender-300x231.png 300w, /wp-content/uploads/2025/07/CatRender-1024x790.png 1024w, /wp-content/uploads/2025/07/CatRender-768x592.png 768w, /wp-content/uploads/2025/07/CatRender-500x386.png 500w, /wp-content/uploads/2025/07/CatRender-800x617.png 800w, /wp-content/uploads/2025/07/CatRender-1280x987.png 1280w" data-sizes="auto" loading="eager">
+		<img decoding="async" width="1400" height="1080" src="/wp-content/uploads/2025/07/CatRender.png" class="wp-image-93" alt="" srcset="/wp-content/uploads/2025/07/CatRender.png 1400w, /wp-content/uploads/2025/07/CatRender-300x231.png 300w, /wp-content/uploads/2025/07/CatRender-1024x790.png 1024w, /wp-content/uploads/2025/07/CatRender-768x592.png 768w, /wp-content/uploads/2025/07/CatRender-500x386.png 500w, /wp-content/uploads/2025/07/CatRender-800x617.png 800w, /wp-content/uploads/2025/07/CatRender-1280x987.png 1280w" sizes="(max-width: 1400px) 100vw, 1400px">
 		<div class="vp-portfolio__item-overlay">
 					</div>
 
@@ -232,8 +208,7 @@ var VPData = {"version":"3.3.16","pro":false,"__":{"couldnt_retrieve_vp":"Couldn
 	<div class="vp-portfolio__item-img">
 			<a href="/wp-content/uploads/2025/07/OfficeRender.png">
 	
-		<noscript><img decoding="async" width="1920" height="1080" data-skip-lazy src="/wp-content/uploads/2025/07/OfficeRender.png" class="wp-image-92" alt="" srcset="/wp-content/uploads/2025/07/OfficeRender.png 1920w, /wp-content/uploads/2025/07/OfficeRender-300x169.png 300w, /wp-content/uploads/2025/07/OfficeRender-1024x576.png 1024w, /wp-content/uploads/2025/07/OfficeRender-768x432.png 768w, /wp-content/uploads/2025/07/OfficeRender-1536x864.png 1536w, /wp-content/uploads/2025/07/OfficeRender-500x281.png 500w, /wp-content/uploads/2025/07/OfficeRender-800x450.png 800w, /wp-content/uploads/2025/07/OfficeRender-1280x720.png 1280w" sizes="(max-width: 1920px) 100vw, 1920px"></noscript>
-<img decoding="async" width="1920" height="1080" src="/wp-content/uploads/2025/07/OfficeRender.png" class="wp-image-92 vp-lazyload" alt srcset="data:image/svg+xml;base64,/PHN2ZyB3aWR0aD0iMTkyMCIgaGVpZ2h0PSIxMDgwIiB2aWV3Qm94PSIwIDAgMTkyMCAxMDgwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjwvc3ZnPg=%3D" data-src="/wp-content/uploads/2025/07/OfficeRender.png" data-srcset="/wp-content/uploads/2025/07/OfficeRender.png 1920w, /wp-content/uploads/2025/07/OfficeRender-300x169.png 300w, /wp-content/uploads/2025/07/OfficeRender-1024x576.png 1024w, /wp-content/uploads/2025/07/OfficeRender-768x432.png 768w, /wp-content/uploads/2025/07/OfficeRender-1536x864.png 1536w, /wp-content/uploads/2025/07/OfficeRender-500x281.png 500w, /wp-content/uploads/2025/07/OfficeRender-800x450.png 800w, /wp-content/uploads/2025/07/OfficeRender-1280x720.png 1280w" data-sizes="auto" loading="eager">
+		<img decoding="async" width="1920" height="1080" src="/wp-content/uploads/2025/07/OfficeRender.png" class="wp-image-92" alt="" srcset="/wp-content/uploads/2025/07/OfficeRender.png 1920w, /wp-content/uploads/2025/07/OfficeRender-300x169.png 300w, /wp-content/uploads/2025/07/OfficeRender-1024x576.png 1024w, /wp-content/uploads/2025/07/OfficeRender-768x432.png 768w, /wp-content/uploads/2025/07/OfficeRender-1536x864.png 1536w, /wp-content/uploads/2025/07/OfficeRender-500x281.png 500w, /wp-content/uploads/2025/07/OfficeRender-800x450.png 800w, /wp-content/uploads/2025/07/OfficeRender-1280x720.png 1280w" sizes="(max-width: 1920px) 100vw, 1920px">
 		<div class="vp-portfolio__item-overlay">
 					</div>
 
@@ -356,11 +331,6 @@ var VPData = {"version":"3.3.16","pro":false,"__":{"couldnt_retrieve_vp":"Couldn
 <script src="/wp-content/plugins/visual-portfolio/build/assets/js/layout-slider.js?ver=3a408120f667542e08e8" id="visual-portfolio-layout-slider-js"></script>
 <script src="/wp-content/plugins/visual-portfolio/assets/vendor/simplebar/dist/simplebar.min.js?ver=5.3.0" id="simplebar-js"></script>
 <script src="/wp-content/plugins/visual-portfolio/build/assets/js/custom-scrollbar.js?ver=1b0797e554b11e494886" id="visual-portfolio-custom-scrollbar-js"></script>
-<script src="/wp-content/plugins/visual-portfolio/build/assets/js/lazysizes-cfg.js?ver=d2bb8f65b3f9b03b1fba" id="lazysizes-config-js"></script>
-<script src="/wp-content/plugins/visual-portfolio/build/assets/js/lazysizes-object-fit-cover.js?ver=4.1.0" id="lazysizes-object-fit-cover-js"></script>
-<script src="/wp-content/plugins/visual-portfolio/build/assets/js/lazysizes-swiper-duplicates-load.js?ver=040890e2fcf3f6049afe" id="lazysizes-swiper-duplicates-load-js"></script>
-<script src="/wp-content/plugins/visual-portfolio/assets/vendor/lazysizes/lazysizes.min.js?ver=5.3.2" id="lazysizes-js"></script>
-<script src="/wp-content/plugins/visual-portfolio/build/assets/js/lazyload.js?ver=68514291aaca509de970" id="visual-portfolio-lazyload-js"></script>
 <script src="/wp-includes/js/imagesloaded.min.js?ver=5.0.0" id="imagesloaded-js"></script>
 <script src="/wp-content/plugins/visual-portfolio/build/assets/js/main.js?ver=2a4ca84b70d8a489b8a6" id="visual-portfolio-js"></script>
 </body>
