@@ -28,9 +28,10 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 <style id="wp-block-spacer-inline-css">.wp-block-spacer{clear:both}</style>
 <style id="wp-block-post-content-inline-css">.wp-block-post-content{display:flow-root}</style>
 <link rel="stylesheet" id="visual-portfolio-css" href="/wp-content/plugins/visual-portfolio/build/assets/css/main.css?ver=1751675712" media="all">
-<link rel="stylesheet" id="fancybox-css" href="/wp-content/plugins/visual-portfolio/assets/vendor/fancybox/dist/jquery.fancybox.min.css?ver=3.5.7" media="all">
-<link rel="stylesheet" id="visual-portfolio-popup-fancybox-css" href="/wp-content/plugins/visual-portfolio/build/assets/css/popup-fancybox.css?ver=1751675712" media="all">
-<style id="visual-portfolio-popup-fancybox-inline-css">.vp-fancybox .fancybox-bg { background-color: #1e1e1e; }</style>
+<link rel="stylesheet" id="photoswipe-css" href="/wp-content/plugins/visual-portfolio/assets/vendor/photoswipe/dist/photoswipe.css?ver=4.1.3" media="all">
+<link rel="stylesheet" id="photoswipe-default-skin-css" href="/wp-content/plugins/visual-portfolio/assets/vendor/photoswipe/dist/default-skin/default-skin.css?ver=4.1.3" media="all">
+<link rel="stylesheet" id="visual-portfolio-popup-photoswipe-css" href="/wp-content/plugins/visual-portfolio/build/assets/css/popup-photoswipe.css?ver=1751675712" media="all">
+<style id="visual-portfolio-popup-photoswipe-inline-css">.vp-pswp .pswp__bg { background-color: #1e1e1e; }</style>
 <link rel="stylesheet" id="swiper-css" href="/wp-content/plugins/visual-portfolio/assets/vendor/swiper/swiper-bundle.min.css?ver=8.4.7" media="all">
 <link rel="stylesheet" id="visual-portfolio-layout-slider-css" href="/wp-content/plugins/visual-portfolio/build/assets/css/layout-slider.css?ver=1751675712" media="all">
 <link rel="stylesheet" id="simplebar-css" href="/wp-content/plugins/visual-portfolio/assets/vendor/simplebar/dist/simplebar.min.css?ver=5.3.0" media="all">
@@ -101,7 +102,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 <link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=http%3A%2F%2F%2F#038;format=xml">
 <script type="text/javascript">
 /* <![CDATA[ */
-var VPData = {"version":"3.3.16","pro":false,"__":{"couldnt_retrieve_vp":"Couldn't retrieve Visual Portfolio ID.","pswp_close":"Close (Esc)","pswp_share":"Share","pswp_fs":"Toggle fullscreen","pswp_zoom":"Zoom in\/out","pswp_prev":"Previous (arrow left)","pswp_next":"Next (arrow right)","pswp_share_fb":"Share on Facebook","pswp_share_tw":"Tweet","pswp_share_x":"X","pswp_share_pin":"Pin it","pswp_download":"Download","fancybox_close":"Close","fancybox_next":"Next","fancybox_prev":"Previous","fancybox_error":"The requested content cannot be loaded. <br \/> Please try again later.","fancybox_play_start":"Start slideshow","fancybox_play_stop":"Pause slideshow","fancybox_full_screen":"Full screen","fancybox_thumbs":"Thumbnails","fancybox_download":"Download","fancybox_share":"Share","fancybox_zoom":"Zoom"},"settingsPopupGallery":{"enable_on_wordpress_images":true,"vendor":"fancybox","deep_linking":false,"deep_linking_url_to_share_images":false,"show_arrows":true,"show_counter":true,"show_zoom_button":false,"show_fullscreen_button":true,"show_share_button":false,"show_close_button":true,"show_thumbs":false,"show_download_button":false,"show_slideshow":false,"click_to_zoom":true,"restore_focus":true},"screenSizes":[320,576,768,992,1200]};
+var VPData = {"version":"3.3.16","pro":false,"__":{"couldnt_retrieve_vp":"Couldn't retrieve Visual Portfolio ID.","pswp_close":"Close (Esc)","pswp_share":"Share","pswp_fs":"Toggle fullscreen","pswp_zoom":"Zoom in\/out","pswp_prev":"Previous (arrow left)","pswp_next":"Next (arrow right)","pswp_share_fb":"Share on Facebook","pswp_share_tw":"Tweet","pswp_share_x":"X","pswp_share_pin":"Pin it","pswp_download":"Download","fancybox_close":"Close","fancybox_next":"Next","fancybox_prev":"Previous","fancybox_error":"The requested content cannot be loaded. <br \/> Please try again later.","fancybox_play_start":"Start slideshow","fancybox_play_stop":"Pause slideshow","fancybox_full_screen":"Full screen","fancybox_thumbs":"Thumbnails","fancybox_download":"Download","fancybox_share":"Share","fancybox_zoom":"Zoom"},"settingsPopupGallery":{"enable_on_wordpress_images":true,"vendor":"photoswipe","deep_linking":false,"deep_linking_url_to_share_images":false,"show_arrows":true,"show_counter":true,"show_zoom_button":false,"show_fullscreen_button":true,"show_share_button":false,"show_close_button":true,"show_thumbs":false,"show_download_button":false,"show_slideshow":false,"click_to_zoom":true,"restore_focus":true},"screenSizes":[320,576,768,992,1200]};
 /* ]]> */
 </script>
 		<noscript>
@@ -135,11 +136,11 @@ var VPData = {"version":"3.3.16","pro":false,"__":{"couldnt_retrieve_vp":"Couldn
 							<button aria-label="Close menu" class="wp-block-navigation__responsive-container-close" data-wp-on-async--click="actions.closeMenuOnClick"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="m13.06 12 6.47-6.47-1.06-1.06L12 10.94 5.53 4.47 4.47 5.53 10.94 12l-6.47 6.47 1.06 1.06L12 13.06l6.47 6.47 1.06-1.06L13.06 12Z"></path></svg></button>
 							<div class="wp-block-navigation__responsive-container-content" data-wp-watch="callbacks.focusFirstElement" id="modal-1-content">
 								<ul class="wp-block-navigation__container is-responsive items-justified-center wp-block-navigation">
-<li class=" wp-block-navigation-item current-menu-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="http://portfolio-site.local/" aria-current="page"><span class="wp-block-navigation-item__label">Home</span></a></li>
-<li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="http://portfolio-site.local/characters/"><span class="wp-block-navigation-item__label">Characters</span></a></li>
-<li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="http://portfolio-site.local/creatures/"><span class="wp-block-navigation-item__label">Creatures</span></a></li>
-<li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="http://portfolio-site.local/environments/"><span class="wp-block-navigation-item__label">Environments</span></a></li>
-<li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="http://portfolio-site.local/contact/"><span class="wp-block-navigation-item__label">Contact</span></a></li>
+<li class=" wp-block-navigation-item current-menu-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://www.sofievandenbroek.com/" aria-current="page"><span class="wp-block-navigation-item__label">Home</span></a></li>
+<li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://www.sofievandenbroek.com/characters/"><span class="wp-block-navigation-item__label">Characters</span></a></li>
+<li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://www.sofievandenbroek.com/creatures/"><span class="wp-block-navigation-item__label">Creatures</span></a></li>
+<li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://www.sofievandenbroek.com/environments/"><span class="wp-block-navigation-item__label">Environments</span></a></li>
+<li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://www.sofievandenbroek.com/contact/"><span class="wp-block-navigation-item__label">Contact</span></a></li>
 </ul>
 							</div>
 						</div>
@@ -301,31 +302,10 @@ var VPData = {"version":"3.3.16","pro":false,"__":{"couldnt_retrieve_vp":"Couldn
 <script src="/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
 <script src="/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
 <script src="/wp-content/plugins/visual-portfolio/build/assets/js/pagination-infinite.js?ver=50005113e26cd2b547c0" id="visual-portfolio-pagination-infinite-js"></script>
-<script id="fancybox-js-before">(function($){
-                if (!$) {
-                    return;
-                }
-
-				function escAttr(text) {
-					return text.replace(/&/g, "&")
-						.replace(/<\/g, "<")
-						.replace(/>/g, ">")
-						.replace(/"/g, """)
-						.replace(/"/g, "'");
-				}
-
-				$(document).on("click", "[data-fancybox]", function (e) {
-					const $this = $(this);
-					const caption = $this.attr("data-caption");
-
-					if (caption) {
-						$this.attr("data-caption", escAttr(caption));
-					}
-				});
-            }(window.jQuery));</script>
-<script src="/wp-content/plugins/visual-portfolio/assets/vendor/fancybox/dist/jquery.fancybox.min.js?ver=3.5.7" id="fancybox-js"></script>
+<script src="/wp-content/plugins/visual-portfolio/assets/vendor/photoswipe/dist/photoswipe.min.js?ver=4.1.3" id="photoswipe-js"></script>
+<script src="/wp-content/plugins/visual-portfolio/assets/vendor/photoswipe/dist/photoswipe-ui-default.min.js?ver=4.1.3" id="photoswipe-ui-default-js"></script>
 <script src="/wp-content/plugins/visual-portfolio/build/assets/js/popup-gallery.js?ver=55efef1afe2df407985b" id="visual-portfolio-popup-gallery-js"></script>
-<script src="/wp-content/plugins/visual-portfolio/build/assets/js/plugin-fancybox.js?ver=1ac13b0d4b49a75c29e7" id="visual-portfolio-plugin-fancybox-js"></script>
+<script src="/wp-content/plugins/visual-portfolio/build/assets/js/plugin-photoswipe.js?ver=19deb59d99d2eea70e05" id="visual-portfolio-plugin-photoswipe-js"></script>
 <script src="/wp-content/plugins/visual-portfolio/assets/vendor/swiper/swiper-bundle.min.js?ver=8.4.7" id="swiper-js"></script>
 <script src="/wp-content/plugins/visual-portfolio/build/assets/js/plugin-swiper.js?ver=9405531650f48979a92f" id="visual-portfolio-plugin-swiper-js"></script>
 <script src="/wp-content/plugins/visual-portfolio/build/assets/js/layout-slider.js?ver=3a408120f667542e08e8" id="visual-portfolio-layout-slider-js"></script>
